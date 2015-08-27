@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# script/server: Launch the application and any extra required processes
+#                locally.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+# ensure everything in the app is up to date.
+script/update
+
+test -z "$RACK_ENV" &&
+  RACK_ENV='development'
+
+# boot the app and any other necessary processes.
+# bin/rake sunspot:solr:run
+
+echo "==> Starting Solr…"
+if [ -f sunspot-solr.pid ]
+then
+  bin/rake sunspot:solr:restart
+else
+  bin/rake sunspot:solr:start
+fi
+
+bin/rails server

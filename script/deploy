@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# script/deploy: Setup for deployment
+
+set -e
+echo "==> Deployment not configured yet…"
