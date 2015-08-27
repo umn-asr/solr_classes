@@ -1,5 +1,6 @@
 # Solr Classes
 
+test
 
 ## Development
 
