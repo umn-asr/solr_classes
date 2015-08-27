@@ -17,3 +17,5 @@
 /log/*
 !/log/.keep
 /tmp
+
+sunspot-solr.pid
