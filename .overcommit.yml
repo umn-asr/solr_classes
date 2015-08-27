@@ -21,6 +21,10 @@ PreCommit:
     enabled: true
     required_executable: './bundle/bin/rubocop'
     command: ['bundle', 'exec', 'rubocop']
+PrePush:
+  ProtectedBranches:
+    enabled: true
+    branches: ['master']
 #
 #  TrailingWhitespace:
 #    exclude:
