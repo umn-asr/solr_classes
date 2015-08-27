@@ -1,7 +1,5 @@
 # Solr Classes
 
-test
-
 ## Development
 
 This repo uses [Scripts to Rule Them All](http://githubengineering.com/scripts-to-rule-them-all/)
