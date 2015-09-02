@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# script/populate: Adds the data in the provided file to Solr
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+script/bootstrap
+
+if [ -n "$1" ]; then
+  bundle exec rake import[$1]
+else
+  echo "fail"; 
+  exit 0; 
+fi
+
+echo "==> Data added"
