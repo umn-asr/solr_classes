@@ -98,6 +98,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
     rake (10.4.2)
+    rsolr (1.0.12)
+      builder (>= 2.1.2)
     rspec (3.3.0)
       rspec-core (~> 3.3.0)
       rspec-expectations (~> 3.3.0)
@@ -137,6 +139,7 @@ DEPENDENCIES
   overcommit
   rails (= 4.2.4)
   rails-api
+  rsolr
   rspec
   rubocop
   sunspot_solr
